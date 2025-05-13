@@ -11,7 +11,7 @@ const holidays =[
 let today = new Date();
 holidays.forEach(holiday => {
    const difference = holiday.date - today;
-   console.log(Math.ceil(difference/(1000*60*60*24)))
+   const days_till = Math.ceil(difference/(1000*60*60*24))
    console.log(`${holiday.name}is in ${days_till} days`)
 });
 
